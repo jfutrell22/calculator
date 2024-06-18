@@ -32,7 +32,7 @@ const App = () => {
       setCalc({
         ...calc,
         num: 
-        calc.num === 0 && value =="0"
+        calc.num === 0 && value ==="0"
         ? "0"
         : removeSpaces(calc.num) % 1 === 0
         ? toLocaleString(Number(removeSpaces(calc.num + value)))
@@ -139,7 +139,7 @@ const App = () => {
                   ? equalsClickHandler
                   : btn === "/" || btn ==="X" || btn==="-" || btn === "+"
                   ? signClickHandler
-                  : btn == "."
+                  : btn === "."
                   ? commaClickHandler
                   : numClickHandler
                 }  
